@@ -1,12 +1,10 @@
 var path = require('path');
 var chalk = require('chalk');
 var webpack = require('webpack');
-var BowerWebpackPlugin = require('bower-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 var root = path.join(__dirname, 'frontend', 'src');
-var bowerRoot = path.join(__dirname, 'bower_components');
 
 module.exports = {
   devtool: 'cheap-eval-source-map',
@@ -20,14 +18,13 @@ module.exports = {
   },
   resolve: {
     alias: {
-      bower: bowerRoot,
-      jquery: path.resolve(bowerRoot, 'jquery', 'dist', 'jquery.min.js')
+      //jquery: path.resolve(bowerRoot, 'jquery', 'dist', 'jquery.min.js')
     },
     root: [
       root
     ],
     modulesDirectories: [
-      'bower_components', 'node_modules', 'frontend/common/styles'
+      'node_modules', 'frontend/common/styles'
     ],
     packageMains: [
       'webpack', 'browser', 'web', ['jam', 'main'], 'main'
@@ -70,18 +67,6 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.DedupePlugin(),
-    new BowerWebpackPlugin({
-      excludes: [
-        /.*\.less/,
-        /.*\.sass/,
-        /.*\.woff/,
-        /.*\.ttf/,
-        /.*\.svg/,
-        /.*\.woff2/,
-        /.*\.eot/,
-        'style'
-      ]
-    }),
     new ExtractTextPlugin('../css/[name].css'),
     new ProgressBarPlugin({
       format: '  build [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
