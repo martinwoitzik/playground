@@ -1,0 +1,39 @@
+footer {
+  padding-top: rem-calc(20);
+  background-color: $inv--dark-primary-text;
+  color: white;
+
+  a, h3 {
+    color: white;
+  }
+
+  h3 {
+    font-size: rem-calc(18);
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  li {
+    font-size: rem-calc(14);
+    list-style: none;
+  }
+
+  .copyright {
+    color: #bbb;
+    padding-bottom: rem-calc(20);
+  }
+
+  .social-links {
+    margin-top: rem-calc(10);
+
+    a {
+      margin-right: rem-calc(5);
+    }
+  }
+}
+
+.register {
+  //margin: rem-calc(30) 0;
+}

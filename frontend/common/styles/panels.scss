@@ -1,0 +1,66 @@
+.panel--bright {
+  @include panel(#fff, rem-calc(20));
+}
+
+.panel--bright-no-padding {
+  @include panel(#fff, rem-calc(20) 0);
+}
+
+.panel--company {
+  @include panel(#fff, rem-calc(20) 0);
+
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .16), 0 0 4px 0 rgba(0, 0, 0, .12);
+  height: 390px;
+  margin-bottom: 20px;
+  transition: all .2s;
+
+  &:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  }
+
+  .company-logo {
+    min-height: 150px;
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+      max-height: 80px;
+      max-width: 150px;
+      position: relative;
+      top: rem-calc(33);
+    }
+  }
+
+  .company-divider {
+    background-color: $inv--col-primary;
+    height: 1px;
+    width: 80%;
+  }
+
+  .company-title {
+    font-size: rem-calc(20);
+    letter-spacing: 1.4px;
+    margin: rem-calc(20);
+    overflow: hidden;
+    text-align: left;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+  }
+
+  .company-description {
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .company-footer {
+    bottom: rem-calc(20);
+    left: rem-calc(5);
+    position: absolute;
+    right: rem-calc(5);
+    text-align: center;
+
+    .button.primary {
+      font-size: rem-calc(16);
+    }
+  }
+}

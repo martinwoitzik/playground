@@ -1,0 +1,33 @@
+@import 'common/styles/variables';
+@import 'common/styles/foundation-settings';
+@import '../node_modules/foundation-sites/scss/foundation';
+@import '../bower_components/font-awesome/scss/font-awesome';
+
+@import 'common/styles/blocks';
+@import 'common/styles/buttons';
+@import 'common/styles/charts';
+@import 'common/styles/fonts';
+@import 'common/styles/footer';
+@import 'common/styles/header';
+@import 'common/styles/homepage';
+@import 'common/styles/images';
+@import 'common/styles/input';
+@import 'common/styles/layout';
+@import 'common/styles/panels';
+@import 'common/styles/quote';
+@import 'common/styles/signup';
+@import 'common/styles/startup';
+@import 'common/styles/swiper';
+@import 'common/styles/tabs';
+@import 'common/styles/tags';
+@import 'common/styles/team';
+@import 'common/styles/text';
+@import 'common/styles/toc';
+@import 'common/styles/wicket-components';
+
+// Modul-Sstylesheets müssen manuell importiert werden. Aber nur dann, wenn
+// ein Stylesheet ohne die entsprechende Direktive/Controller eingebunden werden soll!!
+@import 'src/ui/shared/dark-card/dark-card.scss';
+@import 'src/ui/shared/fullscreen-slideshow/fullscreen-slideshow.scss';
+@import 'src/ui/shared/reference-chip/reference-chip.scss';
+@import 'src/ui/shared/teaser-card/teaser-card.scss';

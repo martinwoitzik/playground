@@ -1,0 +1,55 @@
+//
+// use foundation-mixins for media-queries !!
+//
+
+$inv--font-text:                'FrutigerLight';
+$inv--font-text-bold:           'FrutigerBold';
+$inv--font-headlines:           'FrutigerLight';
+$inv--font-serif:               'utopia-std-display';
+
+$inv--col-primary:              #eb690b;
+$inv--col-primary-lighten:      #ef873c;
+$inv--col-primary-lighten2:     #fbcead;
+$inv--col-primary-lightenmax:   #FFF8F2;
+$inv--col-primary-darken:       darken($inv--col-primary, 10%);
+$inv--col-secondary:            #6baaca;
+$inv--col-secondary-darken:     darken($inv--col-secondary, 10%);
+$inv--col-darkbrown-darken-1:   #33302e;
+$inv--col-darkbrown:            #4d4845;
+$inv--col-darkbrown-lighten-1:  #615B58;
+$inv--col-darkbrown-lighten-2:  #706A66;
+$inv--col-lightbrown:           #d5bf9e;
+$inv--col-darkgrey:             #A8A8A8;
+$inv--col-mediumgrey:           #dbdada;
+$inv--col-lightgrey:            #edecec;
+$inv--col-background:           #fefdfd;
+
+$inv--spacing-extralarge:       80px;
+$inv--spacing-xl:               40px;
+$inv--spacing-large:            20px;
+$inv--spacing-medium:           10px;
+$inv--spacing-small:            5px;
+
+
+// font sizes
+$inv--headline-size0:           54px;
+$inv--headline-size1:           48px;
+$inv--headline-size2:           32px;
+$inv--headline-size3:           20px;
+$inv--headline-size4:           16px;
+$inv--headline-size5:           16px;
+$inv--text-size:                16px;
+$inv--text-small:               12px;
+
+$inv--light-base-text:          #FFFFFF;
+$inv--light-primary-text:       #FFFFFF;
+$inv--light-secondary-text:     #b3b3b3;
+$inv--light-disable-text:       #4d4d4d;
+
+$inv--dark-base-text:           #000000;
+$inv--dark-primary-text:        #262422;
+$inv--dark-secondary-text:      #7b7775;
+$inv--dark-disable-text:        #a19e9d;
+
+// overwrite font-awesome variables
+$fa-font-path:                  '../fonts' !default;

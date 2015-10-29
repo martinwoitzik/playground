@@ -1,0 +1,19 @@
+.quote {
+  position: relative;
+
+  &:before {
+    content: "„";
+    font-size: inherit;
+    position: absolute;
+    top: 0;
+    right: 100%;
+  }
+
+  &:after {
+    content: "“";
+    font-size: inherit;
+    position: relative;
+    top: 0;
+  }
+}
+

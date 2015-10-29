@@ -1,0 +1,45 @@
+.lightgrey-text {
+  color: $inv--col-lightgrey !important;
+}
+.mediumgrey-text {
+  color: $inv--col-mediumgrey !important;
+}
+.darkgrey-text {
+  color: $inv--col-darkgrey !important;
+}
+.light-secondary-text {
+  color: $inv--light-secondary-text !important;
+}
+.dark-secondary-text {
+  color: $inv--dark-secondary-text !important;
+}
+.light-primary-text{
+  color: $inv--light-primary-text
+}
+.dark-primary-text{
+  color: $inv--dark-primary-text;
+}
+.dark-secondary-text{
+  color:$inv--dark-secondary-text;
+}
+
+.dark-disable-text{
+  color:$inv--dark-disable-text;
+}
+
+.light-disable-text{
+  color:$inv--dark-disable-text;
+}
+
+.tiny-text {
+  font-size: $inv--text-small;
+}
+.smalltext {
+  font-size: $inv--headline-size3;
+}
+.bigtext {
+  font-size: $inv--headline-size1;
+}
+.mediumtext{
+  font-size: $inv--headline-size2;
+}

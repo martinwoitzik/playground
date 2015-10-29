@@ -1,0 +1,23 @@
+.tabs {
+  position: relative;
+  top: rem-calc(10);
+}
+
+.tab-title {
+  line-height: 0.4rem;
+  text-align: center;
+
+  a {
+    font-size: rem-calc(12) !important;
+    letter-spacing: rem-calc(1);
+    padding-bottom: 0.4rem !important;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.active {
+    border-bottom: 3px solid $inv--col-primary;
+  }
+}
