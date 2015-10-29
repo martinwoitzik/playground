@@ -7,11 +7,15 @@
     "start": "webpack --watch"
   },
   "author": "Martin Woitzik <m.woitzik@gmx.de>",
+  "dependencies": {
+    "angular": "1.4.4",
+    "angular-touch": "1.4.4",
+    "angular-ui-router": "0.2.15",
+    "font-awesome": "4.4.0"
+  },
   "devDependencies": {
     "angular-mocks": "1.4.3",
     "autoprefixer-loader": "^3.1.0",
-    "bower": "^1.4.1",
-    "bower-webpack-plugin": "^0.1.9",
     "chai": "^2.3.0",
     "chai-jquery": "^2.0.0",
     "chalk": "^1.1.1",

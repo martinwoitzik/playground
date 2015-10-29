@@ -111,7 +111,7 @@ $include-html-global-classes: $include-html-classes;
 // $steel       : #666666;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
- $oil         : #333333;
+// $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
 
@@ -838,15 +838,15 @@ $include-html-global-classes: $include-html-classes;
 // Off Canvas Tab Bar Variables
 // $include-html-off-canvas-classes: $include-html-classes;
 
-$tabbar-bg:         $inv--col-background; // $oil;
-$tabbar-height:     rem-calc(55);
+// $tabbar-bg:         $oil;
+// $tabbar-height:     rem-calc(45);
 // $tabbar-icon-width: $tabbar-height;
 // $tabbar-line-height: $tabbar-height;
 // $tabbar-color: $white;
 // $tabbar-middle-padding: 0 rem-calc(10);
 
 // Off Canvas Divider Styles
- $tabbar-left-section-border: none; //solid 1px scale-color($tabbar-bg, $lightness: -50%);
+// $tabbar-left-section-border: solid 1px scale-color($tabbar-bg, $lightness: -50%);
 // $tabbar-right-section-border: $tabbar-left-section-border;
 
 
@@ -859,7 +859,7 @@ $tabbar-height:     rem-calc(55);
 // Off Canvas Menu Variables
 // $off-canvas-width: rem-calc(250);
 // $off-canvas-bg: $oil;
- $off-canvas-bg-hover: $inv--col-darkgrey; //scale-color($tabbar-bg, $lightness: -30%);
+// $off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -30%);
 // $off-canvas-bg-active: scale-color($tabbar-bg, $lightness: -30%);
 
 // Off Canvas Menu List Variables
@@ -991,14 +991,14 @@ $tabbar-height:     rem-calc(55);
 // We use these to control the background and border styles
 // $panel-bg: scale-color($white, $lightness: -5%);
 // $panel-border-style: solid;
- $panel-border-size: 0; //1px;
+// $panel-border-size: 1px;
 // $callout-panel-bg: scale-color($primary-color, $lightness: 94%);
 
 // We use this % to control how much we darken things on hover
 // $panel-border-color: scale-color($panel-bg, $lightness: -11%);
 
 // We use these to set default inner padding and bottom margin
- $panel-margin-bottom: 0; // rem-calc(20);
+// $panel-margin-bottom: rem-calc(20);
 // $panel-padding: rem-calc(20);
 
 // We use these to set default font colors
@@ -1341,11 +1341,11 @@ $tabbar-height:     rem-calc(55);
 // $include-html-tabs-classes: $include-html-classes;
 
 // $tabs-navigation-padding: rem-calc(16);
- $tabs-navigation-bg-color: transparent; // $silver;
- $tabs-navigation-active-bg-color: transparent; // $white;
- $tabs-navigation-hover-bg-color: transparent; // scale-color($tabs-navigation-bg-color, $lightness: -6%);
- $tabs-navigation-font-color: $inv--col-darkgrey; // $jet;
- $tabs-navigation-active-font-color: white; // $tabs-navigation-font-color;
+// $tabs-navigation-bg-color: $silver;
+// $tabs-navigation-active-bg-color: $white;
+// $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
+// $tabs-navigation-font-color: $jet;
+// $tabs-navigation-active-font-color: $tabs-navigation-font-color;
 // $tabs-navigation-font-size: rem-calc(16);
 // $tabs-navigation-font-family: $body-font-family;
 
@@ -1403,11 +1403,11 @@ $tabbar-height:     rem-calc(55);
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
- $topbar-bg-color: $inv--col-background; // $oil;
+// $topbar-bg-color: $oil;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
- $topbar-height: rem-calc(45);
+// $topbar-height: rem-calc(45);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1415,15 +1415,15 @@ $tabbar-height:     rem-calc(55);
 // $topbar-title-font-size: rem-calc(17);
 
 // Set the link colors and styles for top-level nav
- $topbar-link-color: $inv--col-darkbrown;
- $topbar-link-color-hover: $inv--col-darkbrown-lighten-1;
- $topbar-link-color-active: $inv--col-darkbrown;
- $topbar-link-color-active-hover: $inv--col-darkbrown-lighten-1;
+// $topbar-link-color: $inv--col-darkbrown;
+// $topbar-link-color-hover: $inv--col-darkbrown-lighten-1;
+// $topbar-link-color-active: $inv--col-darkbrown;
+ //$topbar-link-color-active-hover: $inv--col-darkbrown-lighten-1;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
- $topbar-link-bg-hover: $inv--col-lightgrey;
+// $topbar-link-bg-hover: $inv--col-lightgrey;
 // $topbar-link-bg-color-hover: $charcoal;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
