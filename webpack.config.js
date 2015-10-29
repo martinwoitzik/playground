@@ -18,7 +18,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      //jquery: path.resolve(bowerRoot, 'jquery', 'dist', 'jquery.min.js')
+      jquery: path.join(__dirname, 'node_modules', 'foundation-sites', 'js', 'vendor', 'jquery.js')
     },
     root: [
       root

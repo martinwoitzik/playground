@@ -17,8 +17,3 @@ require('foundation-sites/js/foundation/foundation.tab');
 require('foundation-sites/js/foundation/foundation.tooltip');
 require('foundation-sites/js/foundation/foundation.topbar');
 //require('foundation-sites/js/foundation/foundation.equalizer');
-
-var document = $(document);
-document.ready(function() {
-  document.foundation();
-});

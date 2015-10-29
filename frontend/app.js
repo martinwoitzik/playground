@@ -4,7 +4,7 @@ var appTitle = 'playground.app';
 
 require('./app.scss');
 
-require('expose?$!expose?jQuery!jquery');
+require('expose?$!expose?jQuery!foundation-sites/js/vendor/jquery');
 require('angular');
 
 require('./foundation-import');
@@ -15,9 +15,9 @@ require('utils/detection');
 require('ui/locale');
 require('ui/shared/navbar');
 require('ui/shared/header');
-require('ui/state/baseui');
-require('ui/state/home');
-require('ui/state/dashboard');
+require('ui/states/baseui');
+require('ui/states/home');
+require('ui/states/dashboard');
 
 
 angular.element(document).ready(function () {
