@@ -14,7 +14,7 @@ module.exports = {
     app: './frontend/app.js'
   },
   output: {
-    path: path.join(__dirname, 'webapp', 'pages', 'de', 'investiert', 'frontend', 'pages', 'js'),
+    path: path.join(__dirname, 'www', 'js'),
     filename: '[name].bundle.min.js',
     crossOriginLoading: 'use-credentials'
   },
@@ -30,7 +30,7 @@ module.exports = {
       'bower_components', 'node_modules', 'frontend/common/styles'
     ],
     packageMains: [
-      'webpack', 'browser', 'web', 'browserify', ['jam', 'main'], 'main'
+      'webpack', 'browser', 'web', ['jam', 'main'], 'main'
     ]
   },
   module: {

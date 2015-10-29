@@ -25,6 +25,7 @@ angular.element(document).ready(function () {
 });
 
 angular.module(appTitle, [
+  require('angular-ui-router'),
   'api',
   'ngLocale',
   'config',
@@ -42,9 +43,10 @@ angular.module(appTitle, [
     console.log('angular app ' + appTitle + ' is running');
 
   }])
-  .config(['$anchorScrollProvider', function ($anchorScrollProvider) {
+  .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
-    $anchorScrollProvider.disableAutoScrolling();
+    $urlRouterProvider.otherwise('/');
+    //$locationProvider.html5Mode(true);
 
   }]);
 
