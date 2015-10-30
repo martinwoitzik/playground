@@ -5,9 +5,10 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 var root = path.join(__dirname, 'frontend', 'src');
+var nodeModules = path.join(__dirname, 'node_modules');
 
 module.exports = {
-  devtool: 'cheap-eval-source-map',
+  devtool: 'sourcemap',
   entry: {
     app: './frontend/app.js'
   },
@@ -18,7 +19,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      jquery: path.join(__dirname, 'node_modules', 'foundation-sites', 'js', 'vendor', 'jquery.js')
+      jquery: path.join(nodeModules, 'foundation-sites', 'js', 'vendor', 'jquery.js')
     },
     root: [
       root

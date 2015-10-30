@@ -7,7 +7,7 @@ require('./app.scss');
 require('expose?$!expose?jQuery!foundation-sites/js/vendor/jquery');
 require('angular');
 
-require('./foundation-import');
+//require('./foundation-import');
 require('api');
 require('./config');
 require('utils/storage');
@@ -32,8 +32,6 @@ angular.module(appTitle, [
   'storage',
   'detection',
   'ngLocale',
-  'navbar',
-  'header',
   'baseui',
   'home',
   'dashboard'

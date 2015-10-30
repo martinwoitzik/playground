@@ -2,6 +2,9 @@
 
 require('./baseui.scss');
 
-angular.module('baseui', [])
+angular.module('baseui', [
+  'header',
+  'navbar'
+])
   .controller('BaseUiController', require('./baseui.controller'))
   .config(require('./baseui.config'));

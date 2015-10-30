@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = ['$rootScope', '$location', '$state',  '$http', '$scope', 'Auth', function ($rootScope, $location, $state, $http, $scope, Auth) {
+module.exports = ['$scope', function ($scope) {
 
   function activate() {
 
