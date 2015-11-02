@@ -11,7 +11,7 @@ import 'api';
 import './config';
 // import './foundation-import';
 
-import 'utils/detection';
+import 'utils/detection-tool';
 import 'utils/storage';
 
 import 'ui/states/baseui';
@@ -29,7 +29,7 @@ angular.module(appTitle, [
   'api',
   'baseui',
   'dashboard',
-  'detection',
+  'detection-tool',
   'home',
   'ngLocale',
   'storage'

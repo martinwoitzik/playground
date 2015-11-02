@@ -1,5 +1,4 @@
-import endpoint from './endpoint';
-import angular from 'angular';
+import Endpoint from './endpoint';
 
 angular.module('api', [])
-  .factory('API', endpoint);
+  .factory('Endpoint', Endpoint.endpointFactory);

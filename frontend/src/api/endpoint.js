@@ -1,34 +1,26 @@
-//['$q', function ($q) {
 
 class Endpoint {
 
-  constructor(name) {
-    this.name = name;
+  constructor($q) {
+    this._$q = $q;
     this._initialized = false;
-    /*
-     this._apiClient = new SwaggerClient({
-     url: getEndpointUrl(),
-     success: function () {
-     that.setup();
-     }
-     });
-     */
   }
 
-  setup($q) {
+  setup() {
     this._initialized = true;
-    this._apiDeferred = $q.defer();
-
-    console.log('YEAH', $q);
+    this._deferred = this._$q.defer();
   }
 
   get initialized() {
     return this._initialized;
   }
+
+  static endpointFactory($q) {
+    return new Endpoint($q);
+  }
+
 }
 
-  //return Endpoint;
-//
-//}];
+Endpoint.endpointFactory.$inject = ['$q'];
 
-exports = Endpoint;
+module.exports = Endpoint;
