@@ -1,34 +1,34 @@
-module.exports = ['$q', function ($q) {
+//['$q', function ($q) {
 
+class Endpoint {
 
-    var Endpoint = function (name) {
-        var that = this;
+  constructor(name) {
+    this.name = name;
+    this._initialized = false;
+    /*
+     this._apiClient = new SwaggerClient({
+     url: getEndpointUrl(),
+     success: function () {
+     that.setup();
+     }
+     });
+     */
+  }
 
-        this.name = name;
+  setup($q) {
+    this._initialized = true;
+    this._apiDeferred = $q.defer();
 
-        this._apiDeferred = $q.defer();
-/*
-        this._apiClient = new SwaggerClient({
-            url: getEndpointUrl(),
-            success: function () {
-                that.setup();
-            }
-        });
-*/
-    };
+    console.log('YEAH', $q);
+  }
 
-    Endpoint.prototype.setup = function () {
-/*
-        this._apiDeferred.resolve({
-            apiClient: this._apiClient,
-            endpoint: this.name
-        });
-*/
-    };
+  get initialized() {
+    return this._initialized;
+  }
+}
 
-    return {
-        Endpoint: Endpoint
-    };
+  //return Endpoint;
+//
+//}];
 
-
-}];
+exports = Endpoint;

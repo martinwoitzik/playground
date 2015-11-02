@@ -1,10 +1,10 @@
 'use strict';
 
-require('./baseui.scss');
+import './baseui.scss';
 
 angular.module('baseui', [
-  'header',
-  'navbar'
+  //'header',
+  //'navbar'
 ])
   .controller('BaseUiController', require('./baseui.controller'))
   .config(require('./baseui.config'));

@@ -1,23 +1,23 @@
-'use strict';
 
-var appTitle = 'playground.app';
+let appTitle = 'playground.app';
 
-require('./app.scss');
+import './app.scss';
 
-require('expose?$!expose?jQuery!foundation-sites/js/vendor/jquery');
-require('angular');
+import $ from 'jquery';
+import angular from 'angular';
+import ui_router from 'angular-ui-router';
 
-//require('./foundation-import');
-require('api');
-require('./config');
-require('utils/storage');
-require('utils/detection');
-require('ui/locale');
-require('ui/shared/navbar');
-require('ui/shared/header');
-require('ui/states/baseui');
-require('ui/states/home');
-require('ui/states/dashboard');
+import 'api';
+import './config';
+// import './foundation-import';
+import 'ui/locale';
+
+import 'utils/detection';
+import 'utils/storage';
+
+import 'ui/states/baseui';
+import 'ui/states/dashboard';
+import 'ui/states/home';
 
 
 angular.element(document).ready(function () {
@@ -25,10 +25,10 @@ angular.element(document).ready(function () {
 });
 
 angular.module(appTitle, [
-  require('angular-ui-router'),
+  'ui.router',
   'api',
-  'ngLocale',
   'config',
+  'ngLocale',
   'storage',
   'detection',
   'ngLocale',
@@ -41,7 +41,7 @@ angular.module(appTitle, [
     console.log('angular app ' + appTitle + ' is running');
 
   }])
-  .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
+  .config(['$urlRouterProvider', '$locationProvider', function ($urlRouterProvider, $locationProvider) {
 
     $urlRouterProvider.otherwise('/');
     //$locationProvider.html5Mode(true);
