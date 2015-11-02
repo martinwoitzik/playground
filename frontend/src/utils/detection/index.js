@@ -1,4 +1,10 @@
-'use strict';
+
+
+//class Detection {
+//  constructor() {
+//
+//  }
+//}
 
 angular.module('detection', [])
   .factory('Detection', function() {

@@ -3,7 +3,7 @@ import templateUrl from './header.html';
 module.exports = function () {
   return {
     restrict: 'E',
-    controller: 'HeaderController',
+    controller: 'HeaderController as vm',
     templateUrl: templateUrl,
     scope: true
   }

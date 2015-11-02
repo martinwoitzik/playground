@@ -1,7 +1,7 @@
-'use strict';
-
-require('./navbar.scss');
+import './navbar.scss';
+import ctrl from './navbar.controller';
+import directive from './navbar.directive';
 
 angular.module('navbar', [])
-  .controller('NavbarController', require('./navbar.controller'))
-  .directive('navBar', require('./navbar.directive'));
+  .controller('NavbarController', ctrl)
+  .directive('navBar', directive);

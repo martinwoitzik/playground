@@ -1,9 +1,7 @@
-'use strict';
-
 module.exports = function () {
   return {
     restrict: 'E',
-    controller: 'NavbarController',
+    controller: 'NavbarController as vm',
     scope: true
   }
 };

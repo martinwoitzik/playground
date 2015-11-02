@@ -1,11 +1,14 @@
-'use strict';
+NavbarController.$inject = [];
 
-module.exports = ['$scope', function ($scope) {
+function NavbarController() {
 
-  function activate() {
-
-  }
+  let vm = this;
 
   activate();
 
-}];
+  function activate() {
+    console.log('activate navbar directive');
+  }
+}
+
+module.exports = NavbarController;
