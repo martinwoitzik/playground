@@ -7,6 +7,7 @@ module.exports = ['$stateProvider', function ($stateProvider) {
   $stateProvider
     .state('home', {
       url: '/',
+      parent: 'baseui',
       templateUrl: templateUrl
     });
 

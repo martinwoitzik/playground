@@ -1,5 +1,6 @@
-'use strict';
+import ctrl from './header.controller';
+import directive from './header.directive';
 
 angular.module('header', [])
-  .controller('HeaderController', require('./header.controller'))
-  .directive('headerDirective', require('./header.directive'));
+  .controller('HeaderController', ctrl)
+  .directive('headerDirective', directive);

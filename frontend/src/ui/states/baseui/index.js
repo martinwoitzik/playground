@@ -1,10 +1,14 @@
-'use strict';
 
 import './baseui.scss';
+import ctrl from './baseui.controller';
+import config from './baseui.config';
+
+import 'ui/shared/header';
+import 'ui/shared/navbar';
 
 angular.module('baseui', [
-  //'header',
-  //'navbar'
+  'header',
+  'navbar'
 ])
-  .controller('BaseUiController', require('./baseui.controller'))
-  .config(require('./baseui.config'));
+  .controller('BaseUiController', ctrl)
+  .config(config);
