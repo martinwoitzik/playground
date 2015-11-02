@@ -10,7 +10,6 @@ import ui_router from 'angular-ui-router';
 import 'api';
 import './config';
 // import './foundation-import';
-import 'ui/locale';
 
 import 'utils/detection';
 import 'utils/storage';
@@ -25,16 +24,15 @@ angular.element(document).ready(function () {
 });
 
 angular.module(appTitle, [
-  'ui.router',
   'api',
+  'baseui',
   'config',
+  'dashboard',
+  'detection',
+  'home',
   'ngLocale',
   'storage',
-  'detection',
-  'ngLocale',
-  'baseui',
-  'home',
-  'dashboard'
+  'ui.router'
   ])
   .run(['$rootScope', function ($rootScope) {
 
