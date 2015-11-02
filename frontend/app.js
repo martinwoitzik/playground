@@ -5,7 +5,7 @@ import './app.scss';
 
 import $ from 'jquery';
 import angular from 'angular';
-import ui_router from 'angular-ui-router';
+import 'angular-ui-router';
 
 import 'api';
 import './config';
@@ -24,25 +24,27 @@ angular.element(document).ready(function () {
 });
 
 angular.module(appTitle, [
+  'ui.router',
+  'config',
   'api',
   'baseui',
-  'config',
   'dashboard',
   'detection',
   'home',
   'ngLocale',
-  'storage',
-  'ui.router'
+  'storage'
   ])
-  .run(['$rootScope', function ($rootScope) {
+  .run(AppRun)
+  .config(AppConfig);
 
-    console.log('angular app ' + appTitle + ' is running');
+AppRun.$inject = ['$rootScope'];
+AppConfig.$inject = ['$urlRouterProvider', '$locationProvider'];
 
-  }])
-  .config(['$urlRouterProvider', '$locationProvider', function ($urlRouterProvider, $locationProvider) {
+function AppRun($rootScope) {
+  console.log('angular app ' + appTitle + ' is running');
+}
 
-    $urlRouterProvider.otherwise('/');
-    //$locationProvider.html5Mode(true);
-
-  }]);
-
+function AppConfig($urlRouterProvider, $locationProvider) {
+  $urlRouterProvider.otherwise('/');
+  //$locationProvider.html5Mode(true);
+}

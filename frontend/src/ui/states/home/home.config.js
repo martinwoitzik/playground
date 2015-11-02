@@ -1,14 +1,15 @@
-'use strict';
+import templateUrl from './home.html';
 
-var templateUrl = require('./home.html');
 
-module.exports = ['$stateProvider', function ($stateProvider) {
+HomeConfig.$inject = ['$stateProvider'];
 
+function HomeConfig($stateProvider) {
   $stateProvider
     .state('home', {
-      url: '/',
       parent: 'baseui',
+      url: '/',
       templateUrl: templateUrl
     });
+}
 
-}];
+module.exports = HomeConfig;

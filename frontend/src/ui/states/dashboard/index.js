@@ -1,7 +1,8 @@
-'use strict';
 
-require('./dashboard.scss');
+import './dashboard.scss';
+import ctrl from './dashboard.controller';
+import config from './dashboard.config';
 
 angular.module('dashboard', [])
-  .controller('DashboardController', require('./dashboard.controller'))
-  .config(require('./dashboard.config'));
+  .controller('DashboardController', ctrl)
+  .config(config);

@@ -1,14 +1,15 @@
-'use strict';
+import templateUrl from './baseui.html';
 
-var templateUrl = require('./baseui.html');
 
-module.exports = ['$stateProvider', function ($stateProvider) {
+BaseUiConfig.$inject = ['$stateProvider'];
 
+function BaseUiConfig($stateProvider) {
   $stateProvider
     .state('baseui', {
       abstract: true,
       templateUrl: templateUrl,
       controller: 'BaseUiController'
     });
+}
 
-}];
+module.exports = BaseUiConfig;

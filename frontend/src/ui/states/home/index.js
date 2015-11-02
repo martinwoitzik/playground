@@ -1,6 +1,5 @@
-'use strict';
-
-require('./home.scss');
+import './home.scss';
+import config from './home.config';
 
 angular.module('home', [])
-  .config(require('./home.config'));
+  .config(config);

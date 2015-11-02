@@ -1,9 +1,9 @@
-'use strict';
+import templateUrl from './dashboard.html';
 
-var templateUrl = require('./dashboard.html');
 
-module.exports = ['$stateProvider', function ($stateProvider) {
+DashboardConfig.$inject = ['$stateProvider'];
 
+function DashboardConfig($stateProvider) {
   $stateProvider
     .state('dashboard', {
       parent: 'baseui',
@@ -11,5 +11,6 @@ module.exports = ['$stateProvider', function ($stateProvider) {
       controller: 'DashboardController',
       templateUrl: templateUrl
     });
+}
 
-}];
+module.exports = DashboardConfig;

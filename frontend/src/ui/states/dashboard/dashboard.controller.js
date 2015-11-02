@@ -1,6 +1,8 @@
-'use strict';
 
-module.exports = ['$scope', function ($scope) {
+DashboardController.$inject = ['$scope'];
 
+function DashboardController($scope) {
+  console.log('DashboardController called');
+}
 
-}];
+module.exports = DashboardController;
