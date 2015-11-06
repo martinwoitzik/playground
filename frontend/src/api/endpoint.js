@@ -1,6 +1,7 @@
 
-class Endpoint {
+export default class Endpoint {
 
+  /*@ngInject;*/
   constructor($q) {
     this._$q = $q;
     this._initialized = false;
@@ -15,12 +16,4 @@ class Endpoint {
     return this._initialized;
   }
 
-  static endpointFactory($q) {
-    return new Endpoint($q);
-  }
-
 }
-
-Endpoint.endpointFactory.$inject = ['$q'];
-
-module.exports = Endpoint;

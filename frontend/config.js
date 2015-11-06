@@ -1,9 +1,9 @@
 'use strict';
 
-var appConfig = {};
-
-appConfig.version = '0.0.1';
-appConfig.debug = false;
+var appConfig = {
+  version: '0.0.1',
+  debug: false
+};
 
 angular.module('config', [])
   .service('Config', function() {
