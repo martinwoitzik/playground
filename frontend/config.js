@@ -13,4 +13,4 @@ angular.module('config', [])
     return appConfig;
   });
 
-module.exports = appConfig;
+export default appConfig;

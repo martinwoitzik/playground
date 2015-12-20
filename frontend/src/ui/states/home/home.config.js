@@ -3,7 +3,7 @@ import templateUrl from './home.html';
 
 HomeConfig.$inject = ['$stateProvider'];
 
-function HomeConfig($stateProvider) {
+export default function HomeConfig($stateProvider) {
   $stateProvider
     .state('home', {
       parent: 'baseui',
@@ -11,5 +11,3 @@ function HomeConfig($stateProvider) {
       templateUrl: templateUrl
     });
 }
-
-module.exports = HomeConfig;

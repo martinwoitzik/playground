@@ -3,7 +3,7 @@ import templateUrl from './dashboard.html';
 
 DashboardConfig.$inject = ['$stateProvider'];
 
-function DashboardConfig($stateProvider) {
+export default function DashboardConfig($stateProvider) {
   $stateProvider
     .state('dashboard', {
       parent: 'baseui',
@@ -12,5 +12,3 @@ function DashboardConfig($stateProvider) {
       templateUrl: templateUrl
     });
 }
-
-module.exports = DashboardConfig;

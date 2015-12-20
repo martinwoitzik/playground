@@ -1,7 +1,10 @@
-module.exports = function () {
+import templateUrl from './navbar.html';
+
+export default function () {
   return {
     restrict: 'E',
     controller: 'NavbarController as vm',
-    scope: true
+    scope: true,
+    templateUrl: templateUrl
   }
 };
