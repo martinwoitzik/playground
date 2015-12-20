@@ -1,8 +1,6 @@
 
 BaseUiController.$inject = ['$scope'];
 
-function BaseUiController($scope) {
+export default function BaseUiController($scope) {
   console.log('BaseUiController called');
 }
-
-module.exports = BaseUiController;

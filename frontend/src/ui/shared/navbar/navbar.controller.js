@@ -1,6 +1,6 @@
 NavbarController.$inject = [];
 
-function NavbarController() {
+export default function NavbarController() {
 
   let vm = this;
 
@@ -10,5 +10,3 @@ function NavbarController() {
     console.log('activate navbar directive');
   }
 }
-
-module.exports = NavbarController;

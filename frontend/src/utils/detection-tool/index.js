@@ -27,11 +27,7 @@ class DetectionTool {
     return this.featureTests[feature];
   }
 
-  static detectionToolFactory() {
-    return new DetectionTool();
-  }
-
 }
 
 angular.module('detection-tool', [])
-  .factory('DetectionTool', DetectionTool.detectionToolFactory);
+  .factory('DetectionTool', new DetectionTool());

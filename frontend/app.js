@@ -9,7 +9,7 @@ import 'angular-ui-router';
 
 import 'api';
 import './config';
-// import './foundation-import';
+//import './foundation-import';
 
 import 'utils/detection-tool';
 import 'utils/storage';

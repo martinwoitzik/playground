@@ -3,7 +3,7 @@ import templateUrl from './baseui.html';
 
 BaseUiConfig.$inject = ['$stateProvider'];
 
-function BaseUiConfig($stateProvider) {
+export default function BaseUiConfig($stateProvider) {
   $stateProvider
     .state('baseui', {
       abstract: true,
@@ -11,5 +11,3 @@ function BaseUiConfig($stateProvider) {
       controller: 'BaseUiController'
     });
 }
-
-module.exports = BaseUiConfig;

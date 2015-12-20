@@ -1,6 +1,6 @@
 HeaderController.$inject = ['$scope'];
 
-function HeaderController() {
+export default function HeaderController() {
 
   let vm = this;
 
@@ -17,5 +17,3 @@ function HeaderController() {
   }
 
 }
-
-module.exports = HeaderController;
