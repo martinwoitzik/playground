@@ -12,6 +12,9 @@ module.exports = {
   entry: {
     app: './frontend/app.js'
   },
+  externals: {
+    //jquery: 'jQuery'
+  },
   output: {
     path: path.join(__dirname, 'www', 'js'),
     filename: '[name].bundle.min.js',
@@ -19,7 +22,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      jquery: path.join(nodeModules, 'foundation-sites', 'js', 'vendor', 'jquery.js')
+      jquery: path.join(nodeModules, 'foundation-sites', 'node_modules', 'jquery', 'dist', 'jquery.min.js'),
+      foundation: path.join(nodeModules, 'foundation-sites', 'dist', 'foundation.min.js')
     },
     root: [
       root
